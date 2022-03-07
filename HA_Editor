@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=HA_Editor
+
+Version=1.0
+Exec=/home/pi/Desktop/.HA_Editor/code/main_module.py
+Icon=/home/pi/Desktop/.HA_Editor/Documents/editor.jpeg
+Type=Application
+Terminal=false

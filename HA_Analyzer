@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=HA_Analyzer
+
+Version=1.0
+Exec=/home/pi/Desktop/.HA_Editor/code/HAmain_module.py
+Icon=/home/pi/Desktop/.HA_Editor/Documents/analyzer.jpeg
+Type=Application
+Terminal=true

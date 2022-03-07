@@ -1,0 +1,85 @@
+<RCC>
+  <qresource prefix="images">
+    <file>final_assets/stop.png</file>
+    <file>final_assets/abort.jpeg</file>
+    <file>final_assets/stop.jpeg</file>
+    <file>final_assets/images.jpeg</file>
+    <file>final_assets/close-button-png-27.png</file>
+    <file>final_assets/close.png</file>
+    <file>resource.qrc</file>
+    <file>final_assets/Checkbox/check1.png</file>
+    <file>final_assets/Checkbox/check2.png</file>
+    <file>final_assets/Bg_Tile/Kt_Temp_logo.png</file>
+    <file>final_assets/Checkbox/check.png</file>
+    <file>final_assets/Checkbox/uncheck.png</file>
+    <file>final_assets/Dashboard_btn/abt_tester_icon.png</file>
+    <file>final_assets/Dashboard_btn/btn_hover.png</file>
+    <file>final_assets/Dashboard_btn/btn_press.png</file>
+    <file>final_assets/Dashboard_btn/config_icon.png</file>
+    <file>final_assets/Dashboard_btn/contact_icon.png</file>
+    <file>final_assets/Dashboard_btn/diag_icon.png</file>
+    <file>final_assets/Dashboard_btn/help_icon.png</file>
+    <file>final_assets/Dashboard_btn/mng_grp_icon.png</file>
+    <file>final_assets/Dashboard_btn/teaching_icon.png</file>
+    <file>final_assets/Dashboard_btn/testing_icon.png</file>
+    <file>final_assets/Diable_fun/Group 151.png</file>
+    <file>final_assets/Diable_fun/Group 152.png</file>
+    <file>final_assets/drop_down/big_drop_n.png</file>
+    <file>final_assets/drop_down/big_drop_p.png</file>
+    <file>final_assets/drop_down/big_strip.png</file>
+    <file>final_assets/drop_down/dropdown_N.png</file>
+    <file>final_assets/drop_down/dropdown_Name.png</file>
+    <file>final_assets/drop_down/dropdown_P.png</file>
+    <file>final_assets/drop_down/small_drop_N.png</file>
+    <file>final_assets/drop_down/small_drop_P.png</file>
+    <file>final_assets/drop_down/small_strip.png</file>
+    <file>final_assets/drop_down/strip.png</file>
+    <file>final_assets/Drop _Down_menu/dropdown_N.png</file>
+    <file>final_assets/Drop _Down_menu/small_drop_P.png</file>
+    <file>final_assets/Drop _Down_menu/small_drop_N.png</file>
+    <file>final_assets/Drop _Down_menu/small_strip.png</file>
+    <file>final_assets/Highlighters/op_code.png</file>
+    <file>final_assets/Icons/Group.png</file>
+    <file>final_assets/Icons/shutdown_N.png</file>
+    <file>final_assets/Login_Icons/new_pw.png</file>
+    <file>final_assets/Login_Icons/pw.png</file>
+    <file>final_assets/Login_Icons/uid.png</file>
+    <file>final_assets/Main_Btn/btn_normal.png</file>
+    <file>final_assets/Main_Btn/btn_press.png</file>
+    <file>final_assets/Page_Toggle/page_unselect_addcolor.png</file>
+    <file>final_assets/Page_Toggle/page_unselect_facility.png</file>
+    <file>final_assets/Page_Toggle/page_unselect_sp.png</file>
+    <file>final_assets/Page_Toggle/page_unselect.png</file>
+    <file>final_assets/Page_Toggle/page_unselect1.png</file>
+    <file>final_assets/Page_Toggle/page_select.png</file>
+    <file>final_assets/Search_bar/searchIcon.png</file>
+    <file>final_assets/Secondary_btn/big_normal.png</file>
+    <file>final_assets/Secondary_btn/big_press.png</file>
+    <file>final_assets/Secondary_btn/clr_bar.png</file>
+    <file>final_assets/Secondary_btn/exp_db.png</file>
+    <file>final_assets/Secondary_btn/fix_color.png</file>
+    <file>final_assets/Secondary_btn/hover.png</file>
+    <file>final_assets/Secondary_btn/network.png</file>
+    <file>final_assets/Secondary_btn/normal.png</file>
+    <file>final_assets/Secondary_btn/pressed.png</file>
+    <file>final_assets/Secondary_btn/small_hover.png</file>
+    <file>final_assets/Secondary_btn/small_normal.png</file>
+    <file>final_assets/Secondary_btn/small_press.png</file>
+    <file>final_assets/Slide_Page/bck_normal.png</file>
+    <file>final_assets/Slide_Page/bck_press.png</file>
+    <file>final_assets/Slide_Page/nxt_normal.png</file>
+    <file>final_assets/Slide_Page/nxt_press.png</file>
+    <file>final_assets/Sys_btn/P.png</file>
+    <file>final_assets/Sys_btn/sys_reboot.png</file>
+    <file>final_assets/Toggle_fun/pro_icon.png</file>
+    <file>final_assets/Toggle_fun/sample_icon.png</file>
+    <file>final_assets/Toggle_Num/Ellipse.png</file>
+    <file>final_assets/Toggle_Num/no.png</file>
+    <file>final_assets/Toggle_Num/yes.png</file>
+    <file>final_assets/Toggle_yes_no/no.png</file>
+    <file>final_assets/Toggle_yes_no/yes.png</file>
+    <file>final_assets/KalpLogo.bmp</file>
+    <file>final_assets/Icons/home_n.png</file>
+    <file>final_assets/Bg_Tile/Kt_logo.png</file>
+  </qresource>
+</RCC>

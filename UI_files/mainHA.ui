@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1440</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(238, 238, 238, 238);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="1" column="0">
+        <widget class="QDockWidget" name="test">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(238, 238, 238);
+</string>
+         </property>
+         <property name="floating">
+          <bool>false</bool>
+         </property>
+         <property name="features">
+          <set>QDockWidget::DockWidgetMovable</set>
+         </property>
+         <property name="allowedAreas">
+          <set>Qt::LeftDockWidgetArea</set>
+         </property>
+         <property name="windowTitle">
+          <string notr="true"/>
+         </property>
+         <widget class="QWidget" name="dockWidgetContents"/>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_16">
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="minimumSize">
+            <size>
+             <width>24</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>24</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="toolTip">
+            <string>Close window</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/images/final_assets/close-button-png-27.png</normaloff>:/images/final_assets/close-button-png-27.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>24</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="autoDefault">
+            <bool>true</bool>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="maximumSize">
+         <size>
+          <width>281</width>
+          <height>22</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; text-decoration: underline;&quot;&gt;sales@kalptechsolutions.com&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_16">
+        <property name="minimumSize">
+         <size>
+          <width>276</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>275</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(169, 169, 169);
+font: 8pt &quot;Roboto Condensed&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Copyright © 2019 Kalptech solutions Pvt Ltd. All rights reserved.</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="maximumSize">
+         <size>
+          <width>281</width>
+          <height>22</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://www.kalptechsolutions.com/&quot;&gt;&lt;span style=&quot; font-size:10pt; text-decoration: underline; color:#0000ff;&quot;&gt;www.kalptechsolutions.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1440</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(238, 238, 238);
+color: rgb(0,0,0);
+border: 1px solid #00;</string>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(49, 49, 49);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionSelect_Harness"/>
+    <addaction name="actionSplice_Visualization"/>
+    <addaction name="separator"/>
+    <addaction name="actionSupervisor_Login"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(49, 49, 49);
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="title">
+     <string>He&amp;lp</string>
+    </property>
+    <addaction name="actionAbout_KalpTech"/>
+    <addaction name="separator"/>
+    <addaction name="actionDevice_Details"/>
+    <addaction name="separator"/>
+    <addaction name="actionLicence_And_Legality"/>
+    <addaction name="actionProduct_Help"/>
+   </widget>
+   <widget class="QMenu" name="menuReports">
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(49, 49, 49);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="title">
+     <string>&amp;Reports</string>
+    </property>
+    <addaction name="actionProduction_Logs"/>
+    <addaction name="actionTest_Reports"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuReports"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionSelect_Harness">
+   <property name="text">
+    <string>&amp;Select Location</string>
+   </property>
+  </action>
+  <action name="actionSplice_Visualization">
+   <property name="text">
+    <string>Splice &amp;Visualization</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>&amp;Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionAbout_KalpTech">
+   <property name="text">
+    <string>&amp;About KalpTech</string>
+   </property>
+  </action>
+  <action name="actionLicence_And_Legality">
+   <property name="text">
+    <string>&amp;Licence And Legality</string>
+   </property>
+  </action>
+  <action name="actionProduct_Help">
+   <property name="text">
+    <string>&amp;Product Help</string>
+   </property>
+  </action>
+  <action name="actionDevice_Details">
+   <property name="text">
+    <string>Device Details</string>
+   </property>
+  </action>
+  <action name="actionProduction_Logs">
+   <property name="text">
+    <string>Production Logs</string>
+   </property>
+  </action>
+  <action name="actionTest_Reports">
+   <property name="text">
+    <string>Test Reports</string>
+   </property>
+  </action>
+  <action name="actionSupervisor_Login">
+   <property name="text">
+    <string>Supervisor Login</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
