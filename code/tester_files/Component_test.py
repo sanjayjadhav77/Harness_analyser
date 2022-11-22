@@ -9,6 +9,7 @@ def Resistance_test(Net1,Net2,Rval):
     Rmin=Rval-(0.20*Rval)
     single_write(Net1, 1)
     val=analog_read(Net2)
+    print(val)
     voltage=(val*0.0008056640625)
     Dvoltage=(voltage*(22000+47000)/47000)
     print("Dvoltage",Dvoltage)
@@ -84,7 +85,7 @@ if __name__=='__main__':
 ##    Diode_forward_voltage(1,8,0.7)
 ##    voltage_test(8)
     while 1:
-        Resistance_test(1,8,400)
+        Resistance_test(1,6,13000)
         time.sleep(1)
     
 #-----------------------------------------------------------------------------------------------------

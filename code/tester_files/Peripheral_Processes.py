@@ -168,14 +168,16 @@ def bar1_file_replace():
         PC=GV.Pass_Count
      
     GV.week_day='0'+str(GV.week_day)
-    
+
+    year=GV.year[2:]    
     GV.bar1_data=GV.bar1_data.replace("@1",(GV.DMY))
     GV.bar1_data=GV.bar1_data.replace("@2",(GV.HMS))
     GV.bar1_data=GV.bar1_data.replace("@4",(GV.mon))
-    GV.bar1_data=GV.bar1_data.replace("@5",(GV.year))
+    GV.bar1_data=GV.bar1_data.replace("@5",(year))
     GV.bar1_data=GV.bar1_data.replace("@6",str(PC))
     GV.bar1_data=GV.bar1_data.replace("@8",(GV.date))
     GV.bar1_data=GV.bar1_data.replace("@X",(GV.week_no))
+    GV.bar1_data=GV.bar1_data.replace("@Y",(GV.daycount))
     GV.bar1_data=GV.bar1_data.replace("@C",str(GV.code_1))
     GV.bar1_data=GV.bar1_data.replace("@B",str(GV.code_2))
     GV.bar1_data=GV.bar1_data.replace("@N",(GV.week_day))

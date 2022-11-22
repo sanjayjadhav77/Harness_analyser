@@ -43,6 +43,12 @@ class cable_selctionHA(QtGui.QMainWindow,cable_selectHA.Ui_MainWindow):   # clas
         if(GV.Num_Stages>0):
             for a in range(GV.Num_Stages):
                 DownloadHarnessData(GV.Location_No,a+1)
+                if(a==0):
+                    GV.point_count=0
+                    for ckt in GV.circuits:
+                        GV.point_count+=len(ckt)
+
+                    
                 for i in range(len(GV.circuits)):
                     for j in range (len(GV.circuits[i])):
                         maxpoint.append(GV.circuits[i][j])

@@ -132,8 +132,7 @@ class mdiArea_window(QtGui.QMainWindow, new_Mdi.Ui_MainWindow):
         
       
 
-    def production_sample(self):
-
+    def production_sample(self,event):
         if(global_var.p_s==0):
             GV.Sample=0
             global_var.p_s=1
@@ -241,7 +240,7 @@ class mdiArea_window(QtGui.QMainWindow, new_Mdi.Ui_MainWindow):
     def start_process(self,event):
         UploadProdLog_Data(GV.Location_No,GV.Part_Name,'Engine Start','Testing Started')
 ##        self.Enter_btn.setEnabled(False)
-        
+        self.label_21.setEnabled(False)
         self.Enter_btn.setStyleSheet("""border-image: url(:/images/final_assets/Secondary_btn/pressed.png);color: rgb(0, 170, 255);font: 16pt "Roboto [GOOG]";""")
         GV.module_no=8
         GV.Estate=0

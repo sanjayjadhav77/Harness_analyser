@@ -44,8 +44,6 @@ class teaching_page1(QtGui.QMainWindow,teaching_1.Ui_MainWindow):   # class of s
         UpLoadCableId(GV.Location_No,GV.Part_Name)
     def read_cable_info_frm_db(self):
         cbl_data=DownloadCableId_All()
-        
-        
         pts=DownloadCable_Info_all()
         final_data=[]     
         for i in range (len(cbl_data)):

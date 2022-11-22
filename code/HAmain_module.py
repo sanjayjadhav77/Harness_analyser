@@ -180,6 +180,7 @@ class Ui_MainWindow(QtGui.QMainWindow,mymain.Ui_MainWindow):
             print('update_ui',global_var.cable_change_flag)
             GV.data_delivered=0
             global_var.cable_change_flag=0
+            GV.update=1
             Sqdb_to_Ram(2)
             
 
@@ -224,7 +225,7 @@ class Ui_MainWindow(QtGui.QMainWindow,mymain.Ui_MainWindow):
                     self.p4.p1.comboBox.insertItem(i+2, str(i+1))
                 self.p4.pushButton_5.setEnabled(True)
                 self.label_3.setText("Testing Window")
-                self.p4.label_21.setEnabled(False)
+                #self.p4.label_21.setEnabled(False)
                 self.p4.label_10.hide()
                 self.p4.fo_qty.hide()
                 if(GV.AutoPartLoad=='1' and GV.AssetCodeScan=='1'):

@@ -238,6 +238,14 @@ class teaching_page3(QtGui.QMainWindow,teaching_3.Ui_MainWindow):   # class of c
             UploadHarnessData(GV.Location_No,GV.stage,Type,value,Tolerence,circuits,Wire_Type,Wire_color1,Wire_color2,Wire_Gauge)
             UploadSysLog_Data(GV.Location_No,GV.Part_Name,'W/H learn And Stored',' Hrn Saved')
             Get_num_stages(GV.Location_No)
+            # GV.Pass_Count=0
+            # GV.Fail_Count=0
+            # GV.Stage1_status=0
+            GV.Stage1_Points_No=0
+            for ckt in circuits:
+                GV.Stage1_Points_No=GV.Stage1_Points_No+ len(ckt)
+            x=[(GV.Pass_Count,GV.Fail_Count,GV.Stage1_status,GV.Stage1_Points_No,GV.Stage2_status,GV.Stage2_Points_No)]
+            UploadCable_Info(GV.Location_No,x)
             self.comboBox_2.addItem(str(GV.stage+1))
             self.quit_msg="Data Saved "
             self.popupmeassage()

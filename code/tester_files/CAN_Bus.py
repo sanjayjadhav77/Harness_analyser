@@ -5,7 +5,7 @@ import numpy as np
 import global_test_var as GV
 
 array1 = np.zeros((64), dtype=int)
-array = np.ones((256), dtype=int)
+array = np.ones((1024), dtype=int)
 ##print(array)
 def CAN_start():
     os.system("sudo /sbin/ip link set can0 down ")

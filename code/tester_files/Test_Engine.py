@@ -45,6 +45,7 @@ def Supervisor_state(Estate):
 def clear_scan(Estate):
     GV.data_delivered=16
 def Blank_State(Estate):
+    #self.p4.barcode_scan_line.clear()
 
     GV.data_delivered=5
 def invalid_key(Estate):
@@ -54,7 +55,9 @@ def Default_State(Estate):
     print("Default_State")
 def hold_time(Estate):
     # print("GV.data_delivered",GV.data_delivered)
+    #self.p4.barcode_scan_line.clear()
     GV.data_delivered=15
+    
   
 def Asset_Scanning(Estate):
     if(GV.AssetCodeScan=='1'):
@@ -95,9 +98,11 @@ def Leak_Test(Estate):
 
     
 def Component_Test(Estate):
- 
-    GV.data_delivered=7
-    print("Component_Test ")
+    if(GV.Sample==0):
+        GV.data_delivered=7
+        print("Component_Test ")
+    else:
+        GV.Estate=12
 def Label_Printing(Estate):
     if(GV.LabelPrint==1):
         lbl_printing(GV.Local_Label_Data)
@@ -230,12 +235,12 @@ def MultiStage_Test(Estate):
                         GV.data_delivered=2
                         GV.module_no=0
         else:
-            
-            cutter_set()
-            failled_on()
-            time.sleep(GV.Fail_Time)
-            failled_off()
-            cutter_reset()
+            if(GV.Sample==0):
+                cutter_set()
+                failled_on()
+                time.sleep(GV.Fail_Time)
+                failled_off()
+                cutter_reset()
             GV.Abort_flag=0
             GV.Estate=0
     else:
@@ -277,6 +282,7 @@ def UIEngine_Display(data_delivered,self):
 
 def UI_Operational_messages(x,self):
     self.p4.msg_line.setText(GV.Display_Message)
+    self.p4.label_21.setEnabled(True)
     if(GV.message_color==2):
         self.p4.msg_line.setStyleSheet("""border-radius: 1px;font: 20pt "Roboto [GOOG]";color: red""")
     elif(GV.message_color==3):
@@ -292,7 +298,7 @@ def UI_Default_State(x,self):
             self.msg_line.setText("Set FO Quantity...")
             self.msg_line.setStyleSheet("""border-radius: 1px;font: 20pt "Roboto [GOOG]";color: red""")
     else:        
-        self.p4.msg_line.setText("Put Cable")
+        self.p4.msg_line.setText("Put Cable Points-"+(str(GV.point_count)))
         self.p4.msg_line.setStyleSheet("""border-radius: 1px;font: 20pt "Roboto [GOOG]";color: blue""")
 
 
@@ -316,6 +322,7 @@ def UI_HarnessAvailability(x,self):
     time.sleep(0.6)
 def UI_FirstStage_Test(x,self):
     GV.Cutter_Action=0
+    self.p4.label_21.setEnabled(True)
     print("GV.Fail_Coun",GV.Fail_Count)
     GV.Visual_Engine_Start=3
     self.p4.msg_line.setText("Harness Fail...")
@@ -385,6 +392,7 @@ def UI_Component_Test(x,self):
     self.p4.pass_cnt_line.setText(str(GV.Pass_Count))
     self.p4.fail_cnt_line.setText(str(GV.Fail_Count))
     self.p4.fo_qty.setText(str(GV.FoQty))
+    time.sleep(1)
     GV.Estate=8
     GV.data_delivered=4
 def UI_Label_Printing(x,self):
@@ -425,6 +433,7 @@ def UI_Report_Generation(x,self):
 def UI_Actuations(x,self):
     pass
 def UI_RemoveHarness(x,self):
+    self.p4.label_21.setEnabled(True)
     self.p4.pushButton_5.setEnabled(True)
     self.p4.p1.comboBox.setEnabled(True)
     self.p4.p1.frame_4.setEnabled(True)

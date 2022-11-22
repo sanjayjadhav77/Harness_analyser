@@ -901,11 +901,12 @@ def cutter_timeout(t1):
         if(GV.Sample_Production==1):
             GV.data_delivered=2
         else:
-            cutter_set()
-            # failled_on()
-            time.sleep(GV.Fail_Time)
-            cutter_reset()
-            # failled_off() 
+            if(GV.Sample==0):
+                cutter_set()
+                # failled_on()
+                time.sleep(GV.Fail_Time)
+                cutter_reset()
+                # failled_off() 
             
         print("timeout occured...",GV.Sample_result)
         

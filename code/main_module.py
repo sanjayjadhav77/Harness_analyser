@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+'''Harness Editor '''
 import sys
 sys.path.insert(1, '/home/pi/Desktop/.HA_Editor/code/tester_files')
 from global_files import*
@@ -545,7 +546,7 @@ def main():
     global height
     app = QtGui.QApplication(sys.argv)
     app.setStyle(QtGui.QStyleFactory.create("WindowsXP")) 
-    screen_resolution = app.desktop().screenGeometry()
+    screen_resolution = app.desktop().screenGeometry()  
     width  = screen_resolution.width() 
     height = screen_resolution.height()
     print("width,height",width,height)
@@ -594,7 +595,7 @@ def main():
     timer2 = QTimer()
     GUI.connect(timer2,SIGNAL("timeout()"),GUI,SLOT("random_data()"))
     # GUI.showMaximized()
-    GUI.showFullScreen()
+    #GUI.showFullScreen()
     timer2.start(100)
 
     app.exec_()

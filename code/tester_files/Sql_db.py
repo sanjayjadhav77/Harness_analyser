@@ -562,11 +562,11 @@ def DownloadHarnessData(Location_No,stage):##dowload circuits data of pass  loca
     GV.Wire_color1=[]
     GV.Wire_color2=[]
     GV.Wire_Gauge = []
-    for x in range (len(tp)):
-        GV.Wire_Type.append(tp[x][0])
-        GV.Wire_color1.append(tp[x][3])
-        GV.Wire_color2.append(tp[x][4])
-        GV.Wire_Gauge.append(tp[x][5])
+    # for x in range (len(tp)):
+    #     GV.Wire_Type.append(tp[x][0])
+    #     GV.Wire_color1.append(tp[x][3])
+    #     GV.Wire_color2.append(tp[x][4])
+    #     GV.Wire_Gauge.append(tp[x][5])
 
     return(output)
 

@@ -633,3 +633,6 @@ Sflag=0
 global message_color
 message_color=1
 
+global point_count
+point_count=0
+

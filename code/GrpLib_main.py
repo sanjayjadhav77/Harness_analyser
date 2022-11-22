@@ -91,8 +91,15 @@ class Groupcreation(QtGui.QMainWindow, grplib.Ui_MainWindow):
                 if(GV.grp_id == GV.leakage_gbl[i][0] ):
                     print(GV.leakage_gbl[i][0])
                     self.spinBox.setValue(GV.leakage_gbl[i][1])
+
+            for i in range(len(GV.switch_gbl)):
+                if(GV.grp_id == GV.switch_gbl[i][0] ):
                     self.spinBox_3.setValue(GV.switch_gbl[i][1])
-                    self.spinBox_2.setValue(GV.led_gbl[i][1]) 
+
+            for i in range(len(GV.led_gbl)):
+                if(GV.grp_id == GV.led_gbl[i][0] ):
+                    self.spinBox_2.setValue(GV.led_gbl[i][1])
+            
                           
             for i in get_allConLib():
                 self.ConnList.append(i[0])
@@ -128,7 +135,7 @@ class Groupcreation(QtGui.QMainWindow, grplib.Ui_MainWindow):
 
             if (not(table.item(i,1)==None)):
                 if (len((table.item(i,1)).text())>0):
-                    data.append(tuple([int(self.lineEdit_3.text()),int((table.item(i,0)).text()),int((table.item(i,1)).text())]))
+                    data.append(tuple([int(self.lineEdit_3.text()),int((table.item(i,0)).text()),int((table.item(i,1)).text()),int((table.item(i,2)).text())]))
         return (data)
     def WriteTable(self,table):
         data=[]
@@ -143,6 +150,7 @@ class Groupcreation(QtGui.QMainWindow, grplib.Ui_MainWindow):
             self.tableWidget.insertRow(j)
             self.tableWidget.setItem(j, 0,QtGui.QTableWidgetItem(str(data[j][1])))
             self.tableWidget.setItem(j, 1,QtGui.QTableWidgetItem(str(data[j][2])))
+            self.tableWidget.setItem(j, 2,QtGui.QTableWidgetItem(str(data[j][3])))
 
     def read_gloabl1_db(self):
         Grp_1=DownloadGlobal_Grp1()
@@ -276,7 +284,8 @@ class Groupcreation(QtGui.QMainWindow, grplib.Ui_MainWindow):
                 GrpNo=tabledata[i][0]
                 cavityno=tabledata[i][1]
                 GV.LstHWP=tabledata[i][2]
-                GV.lstCTP=GV.lstCTP+1
+                #GV.lstCTP=GV.lstCTP+1
+                GV.lstCTP=tabledata[i][3]
                 x=(GrpNo,cavityno,GV.LstHWP,GV.lstCTP,'CT')
                 GV.r_data.append(x)
             
